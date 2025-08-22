@@ -1,0 +1,51 @@
+/* 1 forma de usar fonte */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jim+Nightshade&family=Konkhmer+Sleokchher&display=swap');
+
+/* 2 forma de usar fonte */
+/*@font-face {
+    font-family: Inter-4.1;
+    src: url(../assets/fonts/Inter-4.1/Inter.ttc),
+    url(../assets/fonts/Inter-4.1/InterVariable-Italic.ttf),
+    url(../assets/fonts/Inter-4.1/InterVariable.ttf);
+}*/
+
+/* variaveis */
+:root {
+    --cor-azul-escuro1: #233342;
+    --cor-azul-escuro2: #30404E;
+    --cor-azul-escuro3: #081B2D;
+    --cor-azul-escuro4: #0C263E;
+    --cor-preto: #000000;
+    --cor-azul1: #00408E;
+    --cor-azul2: #0087FF;
+    --cor-azul-claro1: #6B9AC4;
+    --cor-azul-claro2: #9BCFFC;
+    --cor-azul-claro3: #BFE1FF;
+    --cor-azul4: #5183B2;
+    --cor-branco: #DCE0E3;
+
+    --borda: 1px solid var(var(--cor-azul-escuro2));
+    --borda-arredondada: 30px;
+
+    --tamanho-fonte-lg: 20px;
+    --tamanho-fonte-md: 16px;
+    --tamanho-fonte-sm: 14px;
+  }
+
+    *{
+        padding: 0; /*espaço interno*/
+        margin: 0; /*espaço exnterno*/
+        box-sizing:border-box ; /*atribui espaço interno/externos e bordas no tamanho final do box*/
+        font-family: "Konkhmer Sleokchher", system-ui;;
+    }
+
+
+  body{
+    background-color:var(--cor-azul-escuro1);
+  }
+
+h1{
+    position: absolute; /*altera a posição do elemento*/
+    z-index: -1; /*camadas do elemento*/
+    opacity: 0; /*opacidade*/
+}
