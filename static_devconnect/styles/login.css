@@ -66,9 +66,6 @@
 
     .estilo-formulario {
         max-width: 342px;
-        width: 100%;
-        background-color: var(--cor-azul-escuro3);
-        border-radius: var(--borda-arredondada);
     }
 
 
