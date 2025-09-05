@@ -1,13 +1,12 @@
-main{
-    width:100%;
+main {
+    width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     margin-top: 20px;
-
 }
 
-.container-flex-publi{
+.container-flex-publi {
     background-color: var(--cor-azul-escuro4);
     /* height: 700px; */
     width: 90%;
@@ -17,7 +16,7 @@ main{
     gap: 30px;
 }
 
-#storys{
+#storys {
     width: 100%;
     /* height: 300px; */
     padding: 10px;
@@ -28,16 +27,17 @@ main{
     gap: 30px;
 }
 
-#storys::-webkit-scrollbar{
+#storys::-webkit-scrollbar {
     width: 0;
 }
 
-
-.texto-storys{
+.texto-storys {
     color: var(--cor-branco);
+    cursor: pointer;
+
 }
 
-.card-story>button{
+.card-story>button {
     background-color: transparent;
     border: none;
 
@@ -50,44 +50,48 @@ main{
     gap: 5px;
 }
 
-
-.card-story>button>img{
+.card-story>button>img {
     width: 80px;
     height: 80px;
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
+    cursor: pointer;
 }
+
 
 /* secao criar publi */
 
-.formulario-botao-azul{
+.formulario-botao-azul {
     width: 150px;
-  }
+    cursor: pointer;
+}
 
-  
-#criar-publicacao{
+#botao-upload{
+    cursor: pointer;
+}
+
+#criar-publicacao {
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-#criar-publicacao>h2{
+#criar-publicacao>h2 {
     color: var(--cor-branco);
     font-size: var(--tamanho-fonte-lg);
     font-weight: 700;
-    margin-bottom: 10px;   
-
+    margin-bottom: 10px;
 }
 
-#criar-publicacao>form{
+#criar-publicacao>form {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-#criar-publicacao>form>textarea{
+#criar-publicacao>form>textarea {
     width: 100%;
     height: 80px;
     padding: 10px;
@@ -97,86 +101,78 @@ main{
     font-size: var(--tamanho-fonte-sm);
 }
 
-
-#criar-publicacao>form>textarea::placeholder{
+#criar-publicacao>form>textarea::placeholder {
     color: var(--cor-azul-claro4);
 }
 
-
-
-
-#criar-publicacao>form>footer{
+#criar-publicacao>form>footer {
     margin-top: 10px;
     display: flex;
     justify-content: flex-end;
     gap: 15px;
 }
 
+
 /* secao publi*/
 
-#publicacoes{
-    background-color: brown;
+#publicacoes {
     width: 100%;
 }
 
-.card-publi{
+.card-publi {
     background-color: var(--cor-azul-escuro5);
     width: 100%;
     /* height: 600px; */
     padding: 15px;
+    border-radius: var(--borda-arredondada);
 }
 
-.card-publi>header{
-    display: flex;
-    flex-direction: column;
-   
-}
-
-
-
-.icon-perfil>a{
-   text-decoration: none;
-   display: flex;
-   align-items: center;
-   column-gap: 10px;
-   color: var(--cor-branco);
-   text-transform: lowercase;
-
-    
-}
-
-.card-publi>figure{
+.card-publi>header {
     display: flex;
     flex-direction: column;
 }
 
-.imagem-publicacao{
+.icon-perfil>a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    color: var(--cor-branco);
+    text-transform: lowercase;
+}
+
+.card-publi>figure {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.imagem-publicacao {
     object-fit: cover;
     object-position: center;
     width: 100%;
-    height: 400px;
-    
+    height: 450px;
+    margin-top: 10px;
 }
 
-
-.card-publi>figure>figcaption{
+.card-publi>figure>figcaption {
     color: var(--cor-branco);
     font-size: var(--tamanho-fonte-md);
     font-weight: 700;
-    display: flex; /*por padrao o flex deixa os elementos em linha*/
+    display: flex;
+    /*por padrao o flex deixa os elementos em linha*/
     align-items: center;
     column-gap: 5px;
+    margin-left: 15px;
     order: 2;
-   
 }
 
-.descricao-publicacao{
+.descricao-publicacao {
     font-size: var(--tamanho-fonte-sm);
     font-weight: 200;
-    
 }
 
-.interacoes-publicacoes{
+.interacoes-publicacoes {
     display: flex;
     width: 100px;
     flex-wrap: wrap;
@@ -187,18 +183,18 @@ main{
     margin-top: 15px;
 }
 
-div>span{
+div>span {
     color: var(--cor-branco);
     font-weight: 300;
 }
 
-.interacoes-publicacoes>button{
+.interacoes-publicacoes>button {
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
-.card-publi>figure>button{
+.card-publi>figure>button {
     background-color: transparent;
     border: none;
 
@@ -209,4 +205,5 @@ div>span{
     margin-left: 15px;
 
     align-items: flex-start;
+    cursor: pointer;
 }
