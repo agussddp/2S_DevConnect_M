@@ -160,7 +160,6 @@ main {
     font-size: var(--tamanho-fonte-md);
     font-weight: 700;
     display: flex;
-    /*por padrao o flex deixa os elementos em linha*/
     align-items: center;
     column-gap: 5px;
     margin-left: 15px;

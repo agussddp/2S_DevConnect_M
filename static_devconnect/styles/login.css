@@ -41,6 +41,7 @@
 
     .formulario-botao-azul {
         width: 100%;
+        cursor: pointer;
     }
 
 
@@ -75,12 +76,14 @@
         border-radius: 20px;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
     }
 
 
     main>div>p {
         color: var(--cor-azul2);
         font-size: var(--tamanho-fonte-sm);
+        cursor: pointer;
     }
 
 
@@ -90,6 +93,7 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
+        cursor: pointer;
     }
 
   
