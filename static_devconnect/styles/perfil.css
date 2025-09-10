@@ -28,6 +28,7 @@ main {
     object-fit: cover;
     height: 140px;
     width: 140px;
+    cursor: pointer;
 }
 
 .perfil>#npu {
@@ -73,6 +74,7 @@ main {
 #sgsr>button {
     color: var(--cor-azul2);
     font-size: var(--tamanho-fonte-lg);
+    cursor: pointer;
 }
 
 .perfil>#sep>button,
@@ -106,6 +108,16 @@ main {
     justify-content: center;
     flex-direction: column;
     gap: 25px;
+}
+
+#publicacoes>.card-publi>button{
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#publicacoes>.card-publi>span{
+    margin-left: 10px;
+
 }
 
 .card-publi {
@@ -208,32 +220,77 @@ div>span {
 }
 
 @media screen and (max-width: 767px) {
-    .perfil>img {
-        width: 60px;
-        height: 60px;
+
+    main>.pagina-perfil{
+        width: 330px;
     }
 
-    .perfil>#npu>h2 {
+    .perfil{
+        display: flex;
+        align-items: center;
+        gap: none;
+      
+    }
+
+
+    
+   
+    .perfil>img{
+        min-width:40px;
+        height: 50px;
+        object-fit: cover;
+    }
+
+    .perfil>#npu>h2,span{
+        font-size: 10px;
+    }
+
+    .perfil>#npu>span,#sep>a,#sgsr>a{
+        font-size: 10px;
+    }
+
+    .perfil>#npu>p{
+        font-size: 10px;
+    }
+
+    .perfil>#sep,#sgsr{
+        font-size: 10px;
+    }
+
+    .perfil>#sep>a{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .perfil>#sep>button{
+        font-size: 11px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .perfil>#sgsr>button{
+        font-size: 14px;
+        margin-top: 11px;
+    }
+
+    figure>figcaption>.descricao-publicacao{
+        font-size: 10px;
+    }
+
+    figure>figcaption>p{
+        font-size: 10px;
+    }
+
+    figure>figcaption{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    figure>#vermais{
         font-size: 14px;
     }
 
-    .perfil>#sep>a,
-    #srsg>a {
-        font-size: 12px;
+    .card-publi{
+        width: 240px;
     }
-
-    .perfil>#npu>p {
-        font-size: 14px;
-    }
-
-    .perfil>#sep>button,
-#sgsr>button {
-    font-size: 12px;
-}
-
-.perfil>#npu>span {
- font-size: 12px;
-}
-
-
 }

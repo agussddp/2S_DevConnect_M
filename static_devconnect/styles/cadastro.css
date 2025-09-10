@@ -60,6 +60,8 @@ form>p{
 .formulario-botao-azul{
     width: 100%;
     cursor: pointer;
+    color: var(--cor-branco);
+    text-decoration: none;
 }
 
 

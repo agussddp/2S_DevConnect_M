@@ -7,7 +7,7 @@ main {
 }
 
 .container-flex-publi {
-    background-color: var(--cor-azul-escuro4);
+    /* background-color: var(--cor-azul-escuro4); */
     /* height: 700px; */
     width: 90%;
     max-width: 900px;
@@ -205,4 +205,23 @@ div>span {
 
     align-items: flex-start;
     cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    
+    figure>figcaption>.descricao-publicacao{
+        font-size: 13px;
+    }
+    
+    figure>figcaption>p{
+        font-size: 10px;
+    }
+    
+    figure>figcaption{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }
