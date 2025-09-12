@@ -116,7 +116,7 @@ main {
 }
 
 #publicacoes>.card-publi>span{
-    margin-left: 10px;
+    margin-right: 40px;
 
 }
 
@@ -166,11 +166,11 @@ div>span {
     cursor: pointer;
 }
 
-.card-publi>figure>button {
+.card-publi>.botaovermais {
     background-color: transparent;
     border: none;
 
-    color: var(--cor-azul2);
+    color: var(--cor-azul-claro2);
 
     font-size: var(--tamanho-fonte-sm);
     order: 3;
@@ -180,6 +180,39 @@ div>span {
     align-items: flex-start;
     cursor: pointer;
 }
+
+.card-publi>figure>.botaovermais {
+    background-color: transparent;
+    border: none;
+
+    color: var(--cor-azul-claro2);
+
+    font-size: var(--tamanho-fonte-sm);
+    order: 3;
+
+    margin-left: 15px;
+
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+
+.card-publi>figure>button {
+    background-color: transparent;
+    border: none;
+
+    color: var(--cor-azul-claro2);
+
+    font-size: var(--tamanho-fonte-sm);
+    order: 3;
+
+    margin-left: 15px;
+
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+
 
 .card-publi>button {
     background-color: transparent;
