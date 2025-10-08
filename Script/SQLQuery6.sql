@@ -8,7 +8,7 @@ nomecompleto	NVARCHAR(250)							NOT NULL,
 nomeusuario		NVARCHAR(150)		UNIQUE				NOT NULL,
 email			NVARCHAR(250)		UNIQUE				NOT NULL,
 senha			NVARCHAR(50)							NOT NULL,
-fotoperfilurl	NVARCHAR(150)							NOT NULL,
+fotoperfilurl	NVARCHAR(150)						    NULL,
 );
 
 SELECT * FROM tb_usuario;
@@ -17,7 +17,8 @@ SELECT * FROM tb_usuario;
 CREATE TABLE tb_publicacao(
 id	INT IDENTITY(1,1) PRIMARY KEY,
 id_usuario INT				NOT NULL, FOREIGN KEY (id_usuario) REFERENCES tb_usuario(id),
-descricao NVARCHAR(570),
+descricao  NVARCHAR(570),
+imagemurl  NVARCHAR(570),
 datapubli DATE              NOT NULL,
 );
 
@@ -50,5 +51,7 @@ CREATE TABLE tb_seguidor(
 );
 
 SELECT * FROM tb_seguidor;
+
+
 
 
