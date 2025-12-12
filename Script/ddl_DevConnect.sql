@@ -1,6 +1,6 @@
 CREATE DATABASE DB___DevConnect
 
-
+/* Alt + x */
 
 CREATE TABLE tb_usuario(
 id	INT IDENTITY(1,1) PRIMARY KEY,
@@ -28,6 +28,7 @@ CREATE TABLE tb_curtidas(
 id	INT IDENTITY(1,1) PRIMARY KEY,
 id_usuario		INT NOT NULL, FOREIGN KEY (id_usuario)		REFERENCES tb_usuario(id),
 id_publicacao	INT NOT NULL, FOREIGN KEY (id_publicacao)	REFERENCES tb_publicacao(id),
+
 );
 
 SELECT * FROM tb_curtidas;
@@ -45,9 +46,11 @@ SELECT * FROM tb_comentario;
 
 CREATE TABLE tb_seguidor(
 	id_usuarioseguir	INT		NOT NULL,
-	id_usuarioseguindo	INT		NOT NULL
+	id_usuarioseguindo	INT		NOT NULL,
 
-	PRIMARY KEY (id_usuarioseguir, id_usuarioseguindo)
+	PRIMARY KEY (id_usuarioseguir, id_usuarioseguindo),
+	FOREIGN KEY ( id_usuarioseguindo) REFERENCES tb_usuario(id),
+	FOREIGN KEY ( id_usuarioseguindo) REFERENCES tb_usuario(id),
 );
 
 SELECT * FROM tb_seguidor;
